@@ -1,0 +1,40 @@
+name: 购买电商 SKU 净利润分析器
+description: 仅用于确认商品版本与合法付款交付方式，请勿提交订单数据或付款信息
+title: "[购买咨询] 电商 SKU 净利润分析器"
+labels:
+  - purchase-inquiry
+body:
+  - type: markdown
+    attributes:
+      value: |
+        商品价格：人民币 49 元 / USD 7。请勿在公开 Issue 中提交订单、客户资料、手机号、邮箱、账号、付款信息或任何秘密。
+  - type: dropdown
+    id: platform
+    attributes:
+      label: 使用系统
+      options:
+        - Windows
+        - macOS
+        - Linux
+    validations:
+      required: true
+  - type: dropdown
+    id: format
+    attributes:
+      label: 主要订单来源
+      description: 仅选择类型，不要上传真实订单
+      options:
+        - 淘宝 / 天猫
+        - 拼多多
+        - 抖店
+        - 京东
+        - 其他 CSV
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 隐私确认
+      options:
+        - label: 我不会在此公开 Issue 提交订单数据、个人信息、凭据、付款资料或秘密
+          required: true
