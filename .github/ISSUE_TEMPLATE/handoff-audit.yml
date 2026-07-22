@@ -1,0 +1,44 @@
+name: Git 仓库交付体检报告
+description: 订购 USD 5 / RMB 39 的公开仓库交付体检服务
+title: "[体检订单] 仓库名 / 分支名"
+labels: ["service-order"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        固定价：USD 5 / RMB 39。仅接受客户有权提供的公开仓库；不要提交私有仓库凭据、个人信息、付款信息或任何密钥。提交后先确认范围与交付编号，再通过合规的私下渠道协调付款；实际到账前不会标记为已付款。
+  - type: input
+    id: repository
+    attributes:
+      label: 公开 GitHub 仓库 URL
+      description: 必须是无需登录即可访问的公开仓库。
+      placeholder: https://github.com/owner/repository
+    validations:
+      required: true
+  - type: input
+    id: branch
+    attributes:
+      label: 目标分支或 commit SHA
+      placeholder: main
+    validations:
+      required: true
+  - type: dropdown
+    id: handoff_target
+    attributes:
+      label: 交付对象
+      options:
+        - 客户验收
+        - 团队内部移交
+        - 开源发布
+        - 代码审查前预检
+    validations:
+      required: true
+  - type: checkboxes
+    id: authority
+    attributes:
+      label: 授权与隐私确认
+      options:
+        - label: 我有权提交该公开仓库用于本次检查
+          required: true
+        - label: 我不会在公开 Issue 中提交凭据、密钥、联系方式、付款信息或私有代码
+          required: true
