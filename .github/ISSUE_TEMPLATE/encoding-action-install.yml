@@ -1,0 +1,43 @@
+name: 订购 CSV Encoding Guard Action 安装
+description: USD 5 / RMB 39；一个公开仓库、合成数据验证和一次复检
+title: "[安装服务] CSV Encoding Guard GitHub Action"
+labels:
+  - purchase-inquiry
+body:
+  - type: markdown
+    attributes:
+      value: |
+        固定价 USD 5 / RMB 39。仅接受客户有权提供的公开仓库；交付最小 workflow、合成 CSV 验证证据和七天内一次复检。不要提交私有仓库凭据、客户数据、订单、个人信息或付款资料。实际到账前不会标记为已付款。
+  - type: input
+    id: repository
+    attributes:
+      label: 公开仓库 URL
+      placeholder: https://github.com/OWNER/REPOSITORY
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: 检查模式
+      options:
+        - 整目录批量检查（最多 100 个 CSV）
+        - 单个 CSV 文件
+    validations:
+      required: true
+  - type: input
+    id: input_path
+    attributes:
+      label: 仓库内 CSV 路径
+      description: 只填写相对路径，不要上传真实业务数据
+      placeholder: examples/csv
+    validations:
+      required: true
+  - type: checkboxes
+    id: authorization
+    attributes:
+      label: 授权与隐私确认
+      options:
+        - label: 我有权要求对该公开仓库提交 workflow 修改
+          required: true
+        - label: 我不会在 Issue 中提交凭据、订单、客户数据、个人信息或付款资料
+          required: true

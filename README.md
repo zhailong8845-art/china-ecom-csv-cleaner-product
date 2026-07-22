@@ -4,6 +4,7 @@
 
 - 店铺订单净化器：RMB 59 / USD 9；
 - 中国电商 CSV 乱码修复器：RMB 39 / USD 5；
+- CSV Encoding Guard GitHub Action 安装服务：RMB 39 / USD 5（一个公开仓库，含一次复检）；
 - Git Handoff Checker：RMB 49 / USD 7；
 - 两件组合包：RMB 79 / USD 12。
 - Git 仓库交付体检报告：RMB 39 / USD 5（单个公开仓库，含一次复检）。
