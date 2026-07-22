@@ -1,0 +1,51 @@
+name: CSV 商品数据清洗首批服务（USD 5）
+description: 仅提交字段结构与合成示例；不要公开真实客户、订单或付款数据。
+title: "[CSV cleaning] "
+labels:
+  - purchase-inquiry
+body:
+  - type: markdown
+    attributes:
+      value: |
+        固定价 USD 5 / RMB 39：一份最多 500 行的商品 CSV，包含去重、基础格式统一和前后审计日志。请勿在公开 issue 中上传真实业务数据或联系方式。
+  - type: input
+    id: columns
+    attributes:
+      label: 脱敏字段名称
+      description: 只写列名，例如 SKU、Product Name、Price、Updated Date。
+      placeholder: SKU, Product Name, Category, Price, Stock, Updated Date
+    validations:
+      required: true
+  - type: input
+    id: dedupe-key
+    attributes:
+      label: 去重主键
+      description: 指定用于判断重复记录的字段。
+      placeholder: SKU
+    validations:
+      required: true
+  - type: textarea
+    id: synthetic-example
+    attributes:
+      label: 合成示例与期望结果
+      description: 使用完全虚构的 2–5 行数据说明格式问题，不要复制真实记录。
+    validations:
+      required: true
+  - type: dropdown
+    id: output
+    attributes:
+      label: 交付格式
+      options:
+        - CSV + Markdown 审计日志
+        - Excel + 审计日志工作表
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 隐私确认
+      options:
+        - label: 我没有在公开 issue 中提交真实客户、订单、地址、电话、邮箱、凭据或付款信息。
+          required: true
+        - label: 我理解真实文件只能在双方确认安全的私密交付渠道后提供。
+          required: true
