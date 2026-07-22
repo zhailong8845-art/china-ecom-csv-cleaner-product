@@ -3,19 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>店铺订单净化器｜电商 CSV 清洗去重</title>
-  <meta name="description" content="淘宝、拼多多、抖店订单 CSV 离线清洗、去重和质量报告工具。">
+  <title>实用微型工具商店｜离线数据与开发交付工具</title>
+  <meta name="description" content="可立即运行的电商 CSV 清洗工具与 Git 仓库交付体检器。">
   <style>
     :root{color-scheme:dark;--bg:#0b1020;--card:#151d31;--text:#f4f7ff;--muted:#aab6d3;--green:#72e6a5;--blue:#79a8ff}
     *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 80% 0,#18366c 0,transparent 35%),var(--bg);color:var(--text);font:17px/1.7 system-ui,-apple-system,"PingFang SC",sans-serif}
     main{max-width:980px;margin:auto;padding:72px 24px}.tag{color:var(--green);font-weight:700;letter-spacing:.08em}h1{font-size:clamp(38px,7vw,72px);line-height:1.08;margin:.2em 0}.lead{font-size:22px;color:var(--muted);max-width:760px}.price{font-size:34px;font-weight:800;margin:28px 0}.price small{font-size:16px;color:var(--muted)}
     .cta{display:inline-block;background:var(--green);color:#07130d;padding:14px 22px;border-radius:10px;text-decoration:none;font-weight:800}.secondary{margin-left:10px;background:transparent;color:var(--text);border:1px solid #405172}
     .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin:54px 0}.card{background:color-mix(in srgb,var(--card) 92%,transparent);padding:24px;border:1px solid #283758;border-radius:16px}.card h2{font-size:20px;margin-top:0}.card p{color:var(--muted);margin-bottom:0}
-    img{width:100%;border-radius:14px;border:1px solid #31415e}section{margin-top:60px}li{margin:9px 0;color:var(--muted)}footer{margin-top:70px;color:#73809c;font-size:14px}
+    img{width:100%;border-radius:14px;border:1px solid #31415e}section{margin-top:60px}li{margin:9px 0;color:var(--muted)}footer{margin-top:70px;color:#73809c;font-size:14px}.divider{height:1px;background:#283758;margin:78px 0}.product-label{display:inline-block;padding:5px 11px;border:1px solid #405172;border-radius:999px;color:var(--blue);font-size:14px}.bundle{border-color:var(--green);background:#10271f}
   </style>
 </head>
 <body><main>
-  <div class="tag">离线处理 · 不上传客户数据</div>
+  <div class="tag">实用微型工具 · 下载即用</div>
+  <p class="lead">解决一个具体问题，不订阅、不上传业务数据。所有商品均包含源码、说明、测试和版本化下载包。</p>
+  <div class="divider"></div>
+  <div class="product-label">电商运营工具</div>
   <h1>店铺订单净化器</h1>
   <p class="lead">把淘宝、拼多多、抖店等平台导出的混乱 CSV，一键变成可直接交给 Excel、财务和运营报表的标准订单表。</p>
   <div class="price">¥59 <small>/ USD 9 · 永久使用 · 含源码</small></div>
@@ -30,5 +33,22 @@
   <section id="demo"><h2>真实终端演示</h2><img src="terminal-demo.svg" alt="清洗四行订单并删除一个重复订单的终端演示"></section>
   <section><h2>交付内容</h2><ul><li>完整 Python 源码，无第三方依赖</li><li>中文使用说明和复制即用命令</li><li>示例订单、清洗结果和 JSON 报告</li><li>自动化测试与可扩展字段别名</li><li>版本化 ZIP 下载包</li></ul></section>
   <section><h2>运行要求</h2><p class="lead">Windows、macOS 或 Linux，安装 Python 3.10 以上即可。订单和手机号全程留在本机。</p></section>
-  <footer>© 2026 店铺订单净化器 · 商品咨询通过 GitHub Issue 公开进行，请勿提交手机号、邮箱或订单数据。</footer>
+  <div class="divider"></div>
+  <section id="git-handoff">
+    <div class="product-label">自由职业者 / 开发团队</div>
+    <h1>Git Handoff Checker</h1>
+    <p class="lead">交付代码前，一条命令检查遗漏文件、游离 HEAD、未推送 commit、缺失 upstream 和落后远端的分支，并生成可发给客户的证据报告。</p>
+    <div class="price">¥49 <small>/ USD 7 · 永久使用 · 含源码</small></div>
+    <a class="cta" href="https://github.com/zhailong8845-art/china-ecom-csv-cleaner-product/issues/new?template=git-handoff-purchase.yml">购买咨询</a>
+    <a class="cta secondary" href="https://github.com/zhailong8845-art/git-handoff-checker/releases/tag/v1.0.0">查看公开版本</a>
+    <div class="grid">
+      <div class="card"><h2>交付前失败关闭</h2><p>任何检查失败即返回非零退出码，可直接放进 CI 或交付脚本。</p></div>
+      <div class="card"><h2>三种报告格式</h2><p>终端文本用于人工检查，JSON 用于自动化，Markdown 用于客户验收记录。</p></div>
+      <div class="card"><h2>完全本地运行</h2><p>无第三方依赖，不读取业务源码内容，也不上传仓库数据。</p></div>
+      <div class="card"><h2>经过自动测试</h2><p>覆盖干净仓库、脏工作区、缺失 upstream、非 Git 目录和报告生成。</p></div>
+    </div>
+    <img src="https://raw.githubusercontent.com/zhailong8845-art/git-handoff-checker/codex/git-handoff-checker/demo.svg" alt="Git Handoff Checker 识别未跟踪文件和未推送 commit 的终端演示">
+  </section>
+  <section class="card bundle"><h2>两个工具组合包：¥79 / USD 12</h2><p>同时购买店铺订单净化器和 Git Handoff Checker，比单独购买节省 ¥29 / USD 4。适合既处理运营数据又需要交付自动化脚本的小型团队。</p></section>
+  <footer>© 2026 实用微型工具商店 · 商品咨询通过 GitHub Issue 公开进行，请勿提交手机号、邮箱、客户数据或付款信息。</footer>
 </main></body></html>

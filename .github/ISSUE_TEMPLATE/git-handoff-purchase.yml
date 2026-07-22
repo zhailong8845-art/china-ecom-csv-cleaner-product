@@ -1,0 +1,38 @@
+name: Git Handoff Checker 购买咨询
+description: 咨询 Git 仓库交付体检器或组合包
+title: "[购买咨询] Git Handoff Checker"
+labels: ["purchase-inquiry"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        单品价格：RMB 49 / USD 7。与店铺订单净化器组合购买：RMB 79 / USD 12。请勿在公开 Issue 中填写邮箱、手机号、客户代码、仓库凭据或付款信息。
+  - type: dropdown
+    id: edition
+    attributes:
+      label: 咨询商品
+      options:
+        - Git Handoff Checker 单品
+        - 两件工具组合包
+        - 定制交付检查规则
+    validations:
+      required: true
+  - type: dropdown
+    id: use_case
+    attributes:
+      label: 主要使用场景
+      options:
+        - 自由职业项目交付
+        - 小型开发团队
+        - 代码审查服务
+        - CI / 自动化
+        - 其他
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 隐私确认
+      options:
+        - label: 我不会在公开 Issue 中提交联系方式、客户代码、仓库凭据或付款信息
+          required: true
