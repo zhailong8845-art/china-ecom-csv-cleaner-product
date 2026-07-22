@@ -8,6 +8,7 @@
 - Git 仓库交付体检报告：RMB 39 / USD 5（单个公开仓库，含一次复检）。
 - SKU Profit Analyzer：RMB 49 / USD 7（v1.2.0 提供免费、仅表头的兼容性检查）。
 - CSV 表头适配服务：RMB 39 / USD 5（只需脱敏表头）。
+- GitHub 悬赏候选预检：RMB 39 / USD 5（最多 20 个公开 issue，含一次复检）。
 
 客户数据和付款信息不得发布在公开 Issue 中。
 

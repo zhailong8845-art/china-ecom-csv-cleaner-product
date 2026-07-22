@@ -59,6 +59,13 @@
         "serviceType": "Custom CSV column mapping",
         "description": "根据脱敏后的 CSV 表头交付字段映射、合成数据验证命令和一次复检。",
         "offers": {"@type": "Offer", "price": "5", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://zhailong8845-art.github.io/china-ecom-csv-cleaner-product/#profit-map-service"}
+      },
+      {
+        "@type": "Service",
+        "name": "GitHub 悬赏候选预检报告",
+        "serviceType": "GitHub bounty candidate preflight",
+        "description": "核验最多 20 个公开 GitHub issue 的开放状态、金额证据、仓库活跃度与竞争解决方案。",
+        "offers": {"@type": "Offer", "price": "5", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://zhailong8845-art.github.io/china-ecom-csv-cleaner-product/#bounty-preflight"}
       }
     ]
   }
@@ -144,6 +151,22 @@
       <div class="card"><h2>真实交付物</h2><p>交付带时间、commit SHA、检查证据和优先级整改清单的 Markdown 报告。</p></div>
       <div class="card"><h2>一次复检</h2><p>客户完成整改后，可在七天内对同一分支免费复检一次。</p></div>
     </div>
+  </section>
+  <div class="divider"></div>
+  <section id="bounty-preflight">
+    <div class="product-label">开源贡献者 / Agent 团队</div>
+    <h1>GitHub 悬赏候选预检</h1>
+    <p class="lead">别再为已关闭、已认领、已有竞争 PR 或没有可靠付款证据的“悬赏”浪费实现时间。工具先自动失败关闭，再由人工补充付款主体、托管与验收核验。</p>
+    <div class="price">¥39 <small>/ USD 5 · 最多 20 个公开 issue · 含一次复检</small></div>
+    <a class="cta" href="https://github.com/zhailong8845-art/china-ecom-csv-cleaner-product/issues/new?template=bounty-preflight-report.yml">提交公开候选</a>
+    <a class="cta secondary" href="https://github.com/zhailong8845-art/github-bounty-preflight/releases/tag/v1.0.0">免费下载工具</a>
+    <div class="grid">
+      <div class="card"><h2>明确金额证据</h2><p>要求 USD/USDC 金额与 bounty、funded 或 reward 标签同时存在；金额广告仍不会冒充托管。</p></div>
+      <div class="card"><h2>拒绝已占用任务</h2><p>检测引用 issue 的 PR，以及 claimed、filled、零剩余名额等信号。</p></div>
+      <div class="card"><h2>仓库活跃度</h2><p>归档仓库或最近 90 天无 push 时直接标记为拒绝，避免对陈旧路径投入实现时间。</p></div>
+      <div class="card"><h2>可核验报告</h2><p>提供 Markdown/JSON、明确退出码、逐项理由和付款边界；不索取账号、钱包或私有代码。</p></div>
+    </div>
+    <img src="https://raw.githubusercontent.com/zhailong8845-art/github-bounty-preflight/main/demo.svg" alt="GitHub 悬赏预检工具拒绝已认领且已有竞争 PR 的 16 美元任务">
   </section>
   <footer>© 2026 实用微型工具商店 · 商品咨询通过 GitHub Issue 公开进行，请勿提交手机号、邮箱、客户数据或付款信息。</footer>
 </main></body></html>
