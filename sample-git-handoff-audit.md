@@ -12,7 +12,7 @@
 
 ## Executive result
 
-**PASS WITH ONE IMPROVEMENT.** The exact target commit is publicly reachable,
+**PASS WITH ONE IMPROVEMENT.** The original target commit is publicly reachable,
 clean, fully pushed, tested, licensed, documented, and distributed through a
 versioned release. The repository is ready for source handoff. Before broader
 product marketing, add CI so future commits preserve the five tested behaviors
@@ -60,6 +60,23 @@ cache directories were present in the fresh-clone root inventory.
 A paid audit includes one re-check of the same repository and target branch
 within seven days. A re-check compares the new commit and closes or retains each
 finding with fresh evidence.
+
+## Included re-check — completed
+
+- Re-check commit: `cd60e01f096873a2472d5af1ecc56919b88a52d1`
+- CI run: https://github.com/zhailong8845-art/git-handoff-checker/actions/runs/29890521538
+- Result: **PASS — both original improvements closed.**
+
+| Original finding | Re-check result | Fresh evidence |
+|---|---|---|
+| P2 — Add CI | CLOSED | Six jobs passed: Ubuntu, macOS, and Windows on Python 3.10 and 3.13. Every job compiled both Python files, ran all five tests, created a named handoff branch, and passed the repository self-check. |
+| P3 — Add release provenance | CLOSED | `CHECKSUMS.txt` is attached to `v1.0.0`; it records the ZIP SHA-256 `dd29f8b4a4b660fcd75bca2c74cc26c21124627f989b7c397c83b6b394480210`, and local `shasum -a 256 -c CHECKSUMS.txt` returned `OK`. |
+| Generated test artifacts | CLOSED | The first CI fixture exposed untracked `__pycache__` files. Commit `cd60e01` adds a focused `.gitignore`; the final six-job matrix proves the worktree stays clean after compile and test. |
+
+The first two CI attempts are retained as failure evidence rather than hidden:
+the product correctly rejected detached HEAD, then correctly rejected generated
+untracked bytecode. The final fix corrected the test fixture and repository
+hygiene without weakening any fail-closed check.
 
 ## Limitations
 
