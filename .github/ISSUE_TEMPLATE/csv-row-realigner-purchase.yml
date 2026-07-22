@@ -1,0 +1,45 @@
+name: CSV Row Realigner 购买咨询（USD 5）
+description: 仅提交脱敏字段结构和合成示例；不要公开真实业务记录。
+title: "[CSV Row Realigner] "
+labels:
+  - purchase-inquiry
+body:
+  - type: markdown
+    attributes:
+      value: |
+        USD 5 / RMB 39，包含源码、wheel、测试、示例和审计输出。请勿在公开 issue 中上传真实 CSV、客户信息、凭据或付款信息。
+  - type: input
+    id: columns
+    attributes:
+      label: 脱敏字段名称
+      placeholder: order_id, description, amount, order_date
+    validations:
+      required: true
+  - type: input
+    id: text-column
+    attributes:
+      label: 会包含额外分隔符的文本列
+      placeholder: description
+    validations:
+      required: true
+  - type: input
+    id: id-column
+    attributes:
+      label: 唯一 ID 列
+      placeholder: order_id
+    validations:
+      required: true
+  - type: textarea
+    id: synthetic-example
+    attributes:
+      label: 完全虚构的错位示例
+      description: 只使用虚构值展示一行错误输入及期望列结构。
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 隐私确认
+      options:
+        - label: 我没有提交真实客户、订单、地址、电话、邮箱、凭据或付款信息。
+          required: true
