@@ -1,0 +1,28 @@
+name: 购买咨询
+description: 咨询店铺订单净化器的购买和交付
+title: "[购买咨询] 店铺订单净化器"
+labels: ["purchase-inquiry"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        商品价格：RMB 59 / USD 9。请勿在公开 Issue 中填写邮箱、手机号、订单数据或付款信息。
+  - type: dropdown
+    id: platform
+    attributes:
+      label: 主要订单平台
+      options:
+        - 淘宝/天猫
+        - 拼多多
+        - 抖店
+        - 多平台合并
+        - 其他
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 隐私确认
+      options:
+        - label: 我不会在公开 Issue 中提交客户数据或个人联系方式
+          required: true
