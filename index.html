@@ -114,11 +114,11 @@
     <p class="lead">把订单 CSV 变成 SKU 级利润表，自动扣除退款、平台佣金、物流与商品成本，并把亏损 SKU 排在 Excel 报表最前面。</p>
     <div class="price">¥49 <small>/ USD 7 · 永久使用 · 含源码</small></div>
     <a class="cta" href="https://github.com/zhailong8845-art/china-ecom-csv-cleaner-product/issues/new?template=profit-analyzer-purchase.yml">购买咨询</a>
-    <a class="cta secondary" href="https://github.com/zhailong8845-art/china-ecom-profit-analyzer/releases/tag/v1.1.0">查看公开版本</a>
+    <a class="cta secondary" href="https://github.com/zhailong8845-art/china-ecom-profit-analyzer/releases/tag/v1.2.0">免费下载并检查表头</a>
     <div class="grid">
       <div class="card"><h2>真实净利润</h2><p>统一计算实付、退款、佣金、运费和数量 × 单件成本，不再只看虚高销售额。</p></div>
       <div class="card"><h2>亏损 SKU 预警</h2><p>按净利润从低到高排列，亏损商品标记为 LOSS，优先暴露最需要处理的 SKU。</p></div>
-      <div class="card"><h2>自定义平台列名</h2><p>通过 column-map.json 适配未知平台表头；错误字段或不存在的列会明确失败关闭。</p></div>
+      <div class="card"><h2>免费表头体检</h2><p><code>--inspect-header</code> 只读取 CSV 第一行，立即列出已识别和缺失字段；不会读取订单明细。</p></div>
       <div class="card"><h2>一条命令安装</h2><p>支持 pipx 安装后直接运行 ecom-profit；六组合 CI 覆盖 Windows、macOS、Linux 和 Python 3.10/3.13。</p></div>
     </div>
     <img src="https://raw.githubusercontent.com/zhailong8845-art/china-ecom-profit-analyzer/main/demo.svg" alt="电商 SKU 净利润分析器识别亏损商品的终端演示">
@@ -127,6 +127,7 @@
     <div class="product-label">固定价微服务 · 只需脱敏表头</div>
     <h2>电商 CSV 表头适配：¥39 / USD 5</h2>
     <p>提供不含订单内容的 CSV 第一行表头，我会交付专用 <code>column-map.json</code>、一条运行命令、合成测试行的验证证据，以及七天内针对同一表头的一次免费复检。无需也不接受真实订单、手机号、地址、凭据或付款信息。</p>
+    <p>可先免费下载 v1.2.0，运行 <code>ecom-profit orders.csv --inspect-header</code> 自检；只有显示缺少必填字段时才需要购买适配。</p>
     <a class="cta" href="https://github.com/zhailong8845-art/china-ecom-csv-cleaner-product/issues/new?template=profit-map-service.yml">提交脱敏表头</a>
   </section>
   <section class="card bundle"><h2>三个工具组合包：¥99 / USD 15</h2><p>同时购买店铺订单净化器、电商 SKU 净利润分析器和 Git Handoff Checker，比单独购买节省 ¥58 / USD 8。适合兼顾运营数据与代码交付的小型团队。</p></section>

@@ -6,6 +6,8 @@
 - Git Handoff Checker：RMB 49 / USD 7；
 - 两件组合包：RMB 79 / USD 12。
 - Git 仓库交付体检报告：RMB 39 / USD 5（单个公开仓库，含一次复检）。
+- SKU Profit Analyzer：RMB 49 / USD 7（v1.2.0 提供免费、仅表头的兼容性检查）。
+- CSV 表头适配服务：RMB 39 / USD 5（只需脱敏表头）。
 
 客户数据和付款信息不得发布在公开 Issue 中。
 
