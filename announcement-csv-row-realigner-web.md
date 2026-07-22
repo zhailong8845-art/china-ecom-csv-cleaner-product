@@ -13,6 +13,6 @@ The file stays in the browser; there is no upload endpoint. The release includes
 - Source and tests: https://github.com/zhailong8845-art/csv-row-realigner-web
 - Versioned ZIP: https://github.com/zhailong8845-art/csv-row-realigner-web/releases/tag/v1.0.1
 
-Suggested product price: **USD 9 / RMB 59**. If you have one file up to 500 rows and prefer a human-checked result, the fixed-price first batch is **USD 5**: https://gist.github.com/zhailong8845-art/04d87e552899eabf815da343567f8439
+The self-service browser app, source and ZIP are free. If you have one file up to 500 rows and prefer a human-checked result, the fixed-price first batch is **USD 5 / RMB 39**: https://github.com/zhailong8845-art/china-ecom-csv-cleaner-product/issues/new?template=csv-row-realigner-web-purchase.yml
 
 Please use only synthetic examples in public replies. Do not post customer/order records, personal data, credentials, private URLs or payment information.

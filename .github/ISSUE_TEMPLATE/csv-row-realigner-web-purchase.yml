@@ -1,24 +1,13 @@
-name: CSV Row Realigner 浏览器版购买咨询（USD 9）
-description: 购买离线浏览器工具；公开 issue 只提交脱敏结构和合成示例。
-title: "[CSV Row Realigner Web] "
+name: CSV 错列人工核验修复服务（USD 5）
+description: 一份最多500行CSV的人工核验修复；公开issue只提交脱敏结构和合成示例。
+title: "[USD 5 CSV Repair] "
 labels:
   - purchase-inquiry
 body:
   - type: markdown
     attributes:
       value: |
-        USD 9 / RMB 59，包含离线浏览器工具、源码、7 项测试、错列前后示例和 JSON 审计。提交本表不会产生付款义务；双方必须先确认合法付款方式、费用和交付范围。请勿公开上传真实 CSV、客户信息、凭据或付款信息。
-  - type: dropdown
-    id: operating-system
-    attributes:
-      label: 使用系统
-      options:
-        - Windows
-        - macOS
-        - Linux
-        - 其他现代浏览器环境
-    validations:
-      required: true
+        USD 5 / RMB 39：人工核验修复一份最多 500 行的 CSV，处理一个确认后的自由文本错列字段，交付 Excel 可读 CSV 和 JSON 记录数审计。浏览器自助工具和源码永久免费。提交本表不会产生付款义务；双方必须先确认合法付款方式、费用、私密文件传输方式和交付范围。请勿公开上传真实 CSV、客户信息、凭据或付款信息。
   - type: input
     id: columns
     attributes:
@@ -45,7 +34,7 @@ body:
     attributes:
       label: 范围确认
       options:
-        - label: 我理解本工具只处理一个已知文本列中的多余逗号，短行和格式损坏行会失败关闭。
+        - label: 我理解首批服务只处理一份最多 500 行 CSV 和一个已确认的多余逗号文本列；其他损坏需重新确认范围。
           required: true
         - label: 我理解公开咨询不代表已付款，付款和交付必须由双方另行确认。
           required: true
