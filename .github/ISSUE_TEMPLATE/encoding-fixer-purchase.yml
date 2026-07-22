@@ -1,0 +1,39 @@
+name: 购买中国电商 CSV 乱码修复器
+description: 人民币 39 元 / USD 5；仅确认系统和平台，不提交订单或付款信息
+title: "[购买咨询] 中国电商 CSV 乱码修复器"
+labels:
+  - purchase-inquiry
+body:
+  - type: markdown
+    attributes:
+      value: |
+        商品价格：人民币 39 元 / USD 5，包含源码、wheel、示例和版本化 ZIP。请勿在公开 Issue 中上传订单、客户资料、手机号、邮箱、账号、付款信息、Cookie 或任何秘密。提交后只确认版本与合法的私下付款交付方式；实际到账前不会标记为已付款。
+  - type: dropdown
+    id: platform
+    attributes:
+      label: CSV 来源
+      options:
+        - 淘宝 / 天猫
+        - 京东
+        - 拼多多
+        - 抖店
+        - 其他中国电商平台
+    validations:
+      required: true
+  - type: dropdown
+    id: system
+    attributes:
+      label: 使用系统
+      options:
+        - Windows
+        - macOS
+        - Linux
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 隐私确认
+      options:
+        - label: 我不会在公开 Issue 中提交订单数据、个人信息、凭据、付款资料或秘密
+          required: true

@@ -47,6 +47,14 @@
       },
       {
         "@type": "SoftwareApplication",
+        "name": "中国电商 CSV 乱码修复器",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Windows, macOS, Linux",
+        "description": "离线修复淘宝、京东、拼多多 CSV 的 GB18030、UTF-8 BOM 与分隔符问题。",
+        "offers": {"@type": "Offer", "price": "5", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://zhailong8845-art.github.io/china-ecom-csv-cleaner-product/#encoding-fixer"}
+      },
+      {
+        "@type": "SoftwareApplication",
         "name": "电商 SKU 净利润分析器",
         "applicationCategory": "BusinessApplication",
         "operatingSystem": "Windows, macOS, Linux",
@@ -115,6 +123,22 @@
     <img src="https://raw.githubusercontent.com/zhailong8845-art/git-handoff-checker/codex/git-handoff-checker/demo.svg" alt="Git Handoff Checker 识别未跟踪文件和未推送 commit 的终端演示">
   </section>
   <div class="divider"></div>
+  <section id="encoding-fixer">
+    <div class="product-label">淘宝 / 京东 / 拼多多 CSV</div>
+    <h1>中国电商 CSV 乱码修复器</h1>
+    <p class="lead">自动识别 GB18030/GBK、UTF-8、BOM 以及逗号、Tab、分号、竖线分隔符，统一生成 Excel 可直接打开的 CSV。全程离线，不上传订单。</p>
+    <div class="price">¥39 <small>/ USD 5 · 永久使用 · 含源码</small></div>
+    <a class="cta" href="https://github.com/zhailong8845-art/china-ecom-csv-cleaner-product/issues/new?template=encoding-fixer-purchase.yml">购买咨询</a>
+    <a class="cta secondary" href="https://github.com/zhailong8845-art/china-ecom-csv-encoding-fixer/releases/tag/v1.0.0">查看下载包</a>
+    <div class="grid">
+      <div class="card"><h2>中文乱码修复</h2><p>覆盖中国电商导出常见的 GBK/GB18030 和 UTF-8 BOM，不再手工试编码。</p></div>
+      <div class="card"><h2>列分隔自动识别</h2><p>兼容逗号、Tab、分号和竖线，统一输出标准逗号 CSV。</p></div>
+      <div class="card"><h2>不覆盖原文件</h2><p>输入输出必须不同；发现行列数不一致时失败关闭，不留下部分结果。</p></div>
+      <div class="card"><h2>可核验交付</h2><p>包含完整源码、wheel、示例、JSON 审计结果、6 项测试和 SHA-256。</p></div>
+    </div>
+    <img src="https://raw.githubusercontent.com/zhailong8845-art/china-ecom-csv-encoding-fixer/main/demo.svg" alt="中国电商 CSV 乱码修复器识别 GB18030 和分号分隔符的终端演示">
+  </section>
+  <div class="divider"></div>
   <section id="profit-analyzer">
     <div class="product-label">电商运营利润工具</div>
     <h1>电商 SKU 净利润分析器</h1>
@@ -159,7 +183,7 @@
     <p class="lead">别再为已关闭、已认领、已有竞争 PR 或没有可靠付款证据的“悬赏”浪费实现时间。工具先自动失败关闭，再由人工补充付款主体、托管与验收核验。</p>
     <div class="price">¥39 <small>/ USD 5 · 最多 20 个公开 issue · 含一次复检</small></div>
     <a class="cta" href="https://github.com/zhailong8845-art/china-ecom-csv-cleaner-product/issues/new?template=bounty-preflight-report.yml">提交公开候选</a>
-    <a class="cta secondary" href="https://github.com/zhailong8845-art/github-bounty-preflight/releases/tag/v1.0.0">免费下载工具</a>
+    <a class="cta secondary" href="https://github.com/zhailong8845-art/github-bounty-preflight/releases/tag/v1.1.0">免费下载工具</a>
     <div class="grid">
       <div class="card"><h2>明确金额证据</h2><p>要求 USD/USDC 金额与 bounty、funded 或 reward 标签同时存在；金额广告仍不会冒充托管。</p></div>
       <div class="card"><h2>拒绝已占用任务</h2><p>检测引用 issue 的 PR，以及 claimed、filled、零剩余名额等信号。</p></div>
