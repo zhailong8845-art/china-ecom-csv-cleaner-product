@@ -8,3 +8,5 @@
 - Git 仓库交付体检报告：RMB 39 / USD 5（单个公开仓库，含一次复检）。
 
 客户数据和付款信息不得发布在公开 Issue 中。
+
+服务交付样例：[`sample-git-handoff-audit.md`](sample-git-handoff-audit.md)。
