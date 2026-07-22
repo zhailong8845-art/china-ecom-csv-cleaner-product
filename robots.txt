@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zhailong8845-art.github.io/china-ecom-csv-cleaner-product/sitemap.xml
