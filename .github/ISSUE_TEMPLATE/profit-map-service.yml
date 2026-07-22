@@ -1,0 +1,42 @@
+name: 电商 CSV 表头适配服务
+description: 人民币 39 元 / USD 5；只提交脱敏表头，不提交订单内容或付款信息
+title: "[表头适配] 平台名称或 CSV 类型"
+labels:
+  - service-order
+body:
+  - type: markdown
+    attributes:
+      value: |
+        交付：column-map.json、复制即用命令、合成测试验证、七天内一次复检。公开 Issue 只允许脱敏表头；不要提交任何真实订单行、姓名、手机号、地址、账号、凭据、秘密或付款信息。
+  - type: input
+    id: platform
+    attributes:
+      label: 平台或导出类型
+      placeholder: 例如：某 ERP 的订单明细导出
+    validations:
+      required: true
+  - type: textarea
+    id: headers
+    attributes:
+      label: 脱敏后的 CSV 第一行表头
+      description: 只粘贴列名，不要粘贴第二行或任何真实订单内容
+      placeholder: 交易流水,货品编码,成交件数,买家实付,退款,佣金,物流成本,采购单价
+    validations:
+      required: true
+  - type: textarea
+    id: meanings
+    attributes:
+      label: 非标准列名含义
+      description: 仅解释哪些列对应订单号、SKU、数量、实付、退款、费用、运费、单件成本
+      placeholder: 货品编码 = SKU；买家实付 = 成交收入
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: 安全与权限确认
+      options:
+        - label: 我提交的只有表头和列名含义，不含真实订单、个人信息、凭据、秘密或付款资料
+          required: true
+        - label: 我有权要求适配这个 CSV 格式
+          required: true
